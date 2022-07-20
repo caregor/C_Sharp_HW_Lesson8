@@ -1,13 +1,5 @@
 ﻿//Задача 1: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
-
-int Promt(string message)
-{
-    Console.Write(message);
-    int result = Convert.ToInt32(Console.ReadLine());
-
-    return result;
-}
 int[,] GenerateMatrix(int rows = 3, int columns = 4)
 {
     int[,] result = new int[rows, columns];
@@ -55,10 +47,10 @@ int[,] SortRow(int[,] array)
     return array;
 }
 
-int[,] matix = GenerateMatrix();
-PrintArray(matix);
+int[,] matrix = GenerateMatrix();
+PrintArray(matrix);
 
 Console.WriteLine();
 
-int[,] sorted = SortRow(matix);
+int[,] sorted = SortRow(matrix);
 PrintArray(sorted);
